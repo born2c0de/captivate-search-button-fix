@@ -1,0 +1,1 @@
+find /system/usr/keylayout/ -type f \( -name '*.kl' ! -name 'Generic.kl' ! -name 'Vendor*' ! -name 'AVRCP*' ! -name 'qwerty*' ! -name 'sec_jack*' ! -name 's3c-k*' \) -print0 | xargs -0 sed -i 's/^#[[:blank:]]*key \([[:digit:]]*\)\([[:blank:]]*\)\(SEARCH\)\([[:blank:]]*\)\(VIRTUAL\)/key \1\2\3\4\5/'
