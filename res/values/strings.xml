@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Captivate Search Fixer</string>
+    <string name="app_name">Captivate Search Button Fixer</string>
     <string name="disclaimer">The author is not liable for any damage to your device. USE THIS AT YOUR OWN RISK!</string>
     <string name="lblSelect">Select the Button that gets automatically pressed.</string>
     <string name="optSearchText">SEARCH</string>
