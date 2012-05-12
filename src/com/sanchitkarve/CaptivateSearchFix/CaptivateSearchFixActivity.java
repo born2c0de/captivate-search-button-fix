@@ -46,8 +46,8 @@ public class CaptivateSearchFixActivity extends Activity {
         	{
         		btnFix.setEnabled(false);        		
         		btnUnfix.setEnabled(false);        		
-        		btnFix.setText("NO ROOT ACCESS");
-        		btnUnfix.setText("SUPERUSER NOT FOUND");
+        		btnFix.setText(getString(R.string.RootFAIL));
+        		btnUnfix.setText(getString(R.string.SuNotFound));
         		return;
         	}
         	if(!RootTools.isBusyboxAvailable())
