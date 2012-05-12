@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<LinearLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
@@ -7,6 +11,49 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:text="Select the Button that gets automatically pressed" />
+<RadioGroup
+    android:id="@+id/optGrpButtonSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/optSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="SEARCH" />
 
+    <RadioButton
+        android:id="@+id/optBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK" />
+
+    <RadioButton
+        android:id="@+id/optHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME" />
+
+    <RadioButton
+        android:id="@+id/optMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Fix" />
+
+    <Button
+        android:id="@+id/btnUnfix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Unfix" />
 </LinearLayout>
+</ScrollView>
