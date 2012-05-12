@@ -6,12 +6,20 @@
 <LinearLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-
+    android:orientation="vertical" >	
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:text="@string/disclaimer" />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Select the Button that gets automatically pressed" />
+        android:layout_marginTop="10dp"
+        android:text="@string/lblSelect" />
 <RadioGroup
     android:id="@+id/optGrpButtonSelect"
         android:layout_width="match_parent"
@@ -21,39 +29,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="SEARCH" />
+        android:enabled = "true"
+        android:text="@string/optSearchText" />
 
     <RadioButton
         android:id="@+id/optBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BACK" />
+        android:enabled = "false"
+        android:visibility="gone"
+        android:text="@string/optBackText" />
 
     <RadioButton
         android:id="@+id/optHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="HOME" />
+        android:enabled = "false"
+        android:visibility="gone"
+        android:text="@string/optHomeText" />
 
     <RadioButton
         android:id="@+id/optMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MENU" />
+        android:enabled = "false"
+        android:visibility="gone"
+        android:text="@string/optMenuText" />
+    
+    <RadioButton
+        android:id="@+id/optPlaceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled = "false"
+        android:text="@string/optOtherText" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btnFix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Fix" />
+        android:layout_marginTop="5dp"
+        android:text="@string/btnFix" />
 
     <Button
         android:id="@+id/btnUnfix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/btnUnfix" />
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Unfix" />
+        android:text="@string/lblResult" />
 </LinearLayout>
 </ScrollView>

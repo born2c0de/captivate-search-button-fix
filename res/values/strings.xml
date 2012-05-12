@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, CaptivateSearchFixActivity!</string>
     <string name="app_name">Captivate Search Fixer</string>
-
+    <string name="disclaimer">The author is not liable for any damage to your device. USE THIS AT YOUR OWN RISK!</string>
+    <string name="lblSelect">Select the Button that gets automatically pressed.</string>
+    <string name="optSearchText">SEARCH</string>
+    <string name="optBackText">BACK</string>
+    <string name="optHomeText">HOME</string>
+    <string name="optMenuText">MENU</string>
+    <string name="optOtherText">Other Buttons are Disabled.</string>
+    <string name="btnFix">Fix SEARCH Button</string>
+    <string name="btnUnfix">Unfix SEARCH Button</string>
+    <string name="lblResult">Result:</string>
+    <string name="MountSuccess">/system found at </string>
+    <string name="MountFail">ERROR: Could not find /system</string>
+    <string name="MountRWSuccess">Mounted /system in Read-Write mode.</string>
+    <string name="MountRWFail">ERROR: Could not mount /system in Read-Write mode.</string>
+    <string name="FixSuccess">FIX SUCCESS!</string>    
+    <string name="UnfixSuccess">UNFIX SUCCESS!</string>
+    <string name="RebootMessage">Reboot your phone to apply changes.</string>
+    <string name="RestoreMountSuccess">Restored /system to Read-Only mode.</string>
+    <string name="RestoreMountFail">ERROR: Could not restore /system to Read-Only mode.</string>
+    <string name="KLModifySuccess">Keyboard Layout files have been modified.</string>
+    <string name="KLModifyFail">ERROR: Keyboard Layout files could not be modified.</string>
+    <string name="RootFAIL">NO ROOT ACCESS</string>
+    <string name="SuNotFound">SUPERUSER NOT FOUND</string>
+    <string name="BusyBoxFAIL">BUSYBOX NOT FOUND</string>
+    <string name="RootPermissionFAIL">ROOT PERMISSION DENIED</string> 
 </resources>
